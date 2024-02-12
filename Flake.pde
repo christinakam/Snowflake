@@ -16,7 +16,7 @@ class Flake {
   void show() {
     noFill();
     stroke(255);
-    ellipse(x, y, dia, dia);
+    ellipse(x, y, d, d);
   }
 
   void move() {
