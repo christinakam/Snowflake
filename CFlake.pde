@@ -1,9 +1,10 @@
 class CFlake extends Flake {
   float r, g, b;
-  CFlake (float _x, float _y) {
+  CFlake () {
     r = (float)(Math.random()*256);
     b = (float)(Math.random()*256);
     g = (float)(Math.random()*256);
+    d *= 2;
   }
   void show() {
     fill(r, g, b);
