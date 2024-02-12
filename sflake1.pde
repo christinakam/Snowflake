@@ -40,9 +40,10 @@ void showFlakes() {
 void createAddFlake() {
   if (Math.random()>=0.5) {
     cur = new Flake(width/2-dia, 0);
+    flakes.add(cur);
   } else {
-    cur = new CFlake(width/2-dia, 0);
-    cur.d = cur.d*2;
+    cur = new CFlake();
+    flakes.add(cur);
   }
 
   flakes.add(cur);
